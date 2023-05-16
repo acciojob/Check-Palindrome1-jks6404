@@ -1,15 +1,20 @@
 // complete the given function
 
 function palindrome(str){
-let isPalindrome = true;
-	let i=0, j=str.length-1;
-
-	while(i<=j && isPalindrome){
-		if (str[io]!==str[j]){
-			isPalindrome=false;
+	var s =	str.toLowerCase()
+var i = 0
+	var j = s.length - 1;
+	while (i<j) {
+		if(s.charAt(i)===s.charAt(j)) {
+			i++;
+			j--;
+		}
+		else {
+			return false
+		}
+		
 	}
-	i++;
-	j--;
+	return true
+
 }
-console.log(isPalindrome ? "Palindrome" : "Not a palindrome")
 module.exports = palindrome
