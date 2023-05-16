@@ -13,9 +13,9 @@ var i = 0
 		else {
 			return false
 		}
-		return true
+		
 	}
-	
+	return true
 
 }
 module.exports = palindrome
