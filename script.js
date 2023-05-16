@@ -8,12 +8,12 @@ var i = 0
 		if(s.charAt(i)===s.charAt(j)) {
 			i++;
 			j--;
-			return true
+			
 		}
 		else {
 			return false
 		}
-		
+		return true
 	}
 	
 
